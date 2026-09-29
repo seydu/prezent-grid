@@ -13,6 +13,7 @@ use Prezent\Grid\Extension\Core\Type\ActionType;
  */
 class GridBuilder
 {
+    public ElementTypeFactory $elementTypeFactory;
     /**
      * @var ResolvedGridType
      */

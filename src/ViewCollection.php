@@ -47,7 +47,7 @@ class ViewCollection implements \ArrayAccess, \IteratorAggregate, \Countable
      * {@inheritDoc}
      * @return mixed
      */
-    public function offsetGet($name)
+    public function offsetGet(mixed $name): mixed
     {
         return $this->views[$name];
     }
@@ -55,7 +55,7 @@ class ViewCollection implements \ArrayAccess, \IteratorAggregate, \Countable
     /**
      * {@inheritDoc}
      */
-    public function offsetSet($name, $view): void
+    public function offsetSet(mixed $name, mixed $view): void
     {
         if (!($view instanceof View)) {
             throw new UnexpectedTypeException(View::class, $view);

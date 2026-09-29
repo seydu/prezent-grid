@@ -46,7 +46,7 @@ class PropertyPathResolver implements VariableResolver
             try {
                 return $this->accessor->getValue($item, $match[1]);
             } catch (ExceptionInterface $e) {
-                throw new InvalidArgumentException(sprintf('Invalid property path "%s"', $match[1]), null, $e);
+                throw new InvalidArgumentException(sprintf('Invalid property path "%s"', $match[1]), 1, $e);
             }
         }, $variable);
 

@@ -13,6 +13,7 @@ use Prezent\Grid\Exception\UnexpectedTypeException;
  */
 class DefaultGridTypeFactory implements GridTypeFactory
 {
+    public array$extensions;
     /**
      * @var array
      */
